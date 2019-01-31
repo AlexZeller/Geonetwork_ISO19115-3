@@ -13,6 +13,6 @@ RUN mkdir -p geonetwork && \
 
 #Set geonetwork data dir
 COPY ./docker-entrypoint.sh /entrypoint.sh
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["sh", "/entrypoint.sh"]
 
 CMD ["catalina.sh", "run"]
